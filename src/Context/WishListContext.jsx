@@ -5,7 +5,7 @@ export const WishlistContext = createContext();
 export default function WishListContext({ children }) {
   const [wishList, setWishList] = useState([]);
   let headers = {
-    token: localStorage.getItem("userToken"),
+    token: localStorage.getItem("token"),
   };
   console.log("Stored Token:", localStorage.getItem("token"));
 
